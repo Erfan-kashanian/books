@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { supabase } from "/Users/Erfan kashanian/Desktop/books/my-app/src/config/supabase"
+import { supabase } from "../../config/supabase"
 
 export const UseFetch = (category, subcategory) => {
 
