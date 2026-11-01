@@ -1,0 +1,47 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    padding: 1rem;
+    width: 32%;
+    position: relative;
+    right: 32%;
+    bottom: 15vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px green;
+}
+form label{
+    margin-top: 1rem;
+}
+form label input{
+    border: solid 2px green;
+    border-radius: 5px;
+    width: 30vw;
+    box-shadow: 5px 5px 5px green;
+}
+
+form button{
+    margin-top: 1rem;
+    font-size: larger;
+    padding: 0rem 1.5rem;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2px solid aliceblue;
+    font-weight: 600;
+}
+form button:hover{
+    color: green;
+    background-color: aliceblue;
+    border: solid 2px green;
+    cursor: pointer;
+}
+.input-err{
+    border: solid 2px red;
+    box-shadow: 5px 5px 5px red;
+}
+.error{
+    color: red;
+}

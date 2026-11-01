@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "farsi";
+    src: url(/my-app/src/font/BBadr.ttf);
+}
+*{
+    font-family: "farsi";
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+.main{
+    position: relative;
+    top: -30vh;
+}
+.hero{
+    background-color: rgb(157, 218, 157);
+    width: 90%;
+    height: 65vh;
+    border: 1px solid green;
+    border-radius: 10px;
+    position: relative;
+    right: 4%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .input input{
+    direction: rtl;
+    padding: 1rem;
+    width: 40vw;
+    font-size: larger;
+    text-align: center;
+    border: green 1px solid;
+    border-radius: 0px 10px 10px 0px;
+}
+.hero .input button{
+    padding: 1rem;
+    font-size: larger;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid green ;
+    transition: 0.2s;
+}
+.hero h2{
+    color: green;
+}
+.hero .input button:hover{
+    background-color: white;
+    color: green;
+    cursor: pointer;
+}
+.hero .input button:active{
+    transform: scale(0.5);
+    color: aliceblue;
+    background-color: green;
+}
+.home{
+    margin-top: 2rem;
+}
+
+.home .books{
+ background-color: rgba(58, 170, 73, 0.267);
+ border-radius: 10px;
+}
+.home .books .item{
+ background-color: white;
+}
+.home .item a:hover{
+        color: green !important;
+    background-color: white !important;
+    border: solid 2px green !important;
+    font-weight: 900 !important;
+}
+.home .books .item a:active{
+        transform: scale(0.6);
+
+}
+@media (max-width:450px){
+    .main{
+        top:-25vh;
+    }
+    .hero h2{
+        font-size: medium;
+    }
+    .hero .input input{
+        width: 35vw;
+        padding: 0.5rem;
+        font-size: small;
+    }
+    .hero .input button{
+    padding: 0.5rem;
+    font-size: small;
+}
+}
+@media (min-width:450px) and (max-width:720px){
+    .main{
+        top: -50vh;
+    }
+        .main .hero h2{
+        font-size: 20px;
+    }
+    .hero .input input{
+        width: 40vw;
+        padding: 0.7rem;
+        font-size: medium;
+    }
+    .hero .input button{
+    padding: 0.7rem;
+    font-size: medium;
+}
+}

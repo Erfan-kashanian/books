@@ -1,0 +1,223 @@
+.introduction{
+    background-color: rgb(177, 214, 177);    
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction p{
+    font-weight: 700;
+    padding: 0 2rem;
+    font-size: larger;
+    margin-top: 0;
+}
+.middlePersian{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.middlePersian aside ul{
+    position: sticky;
+    top: 10%;
+}
+.middlePersian aside ul li{
+padding: 0.5rem;
+margin-top: 0.5rem;
+list-style: none;
+font-size: x-large;
+border-bottom: 2px solid black;
+width: 50%;
+transition: 0.1s;
+}
+.middlePersian aside ul li:hover{
+    color: green;
+    width: 60%;
+    border-bottom: 2px solid green;
+    transform: scale(1.1);
+}
+.middlePersian aside ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.middlePersian aside ul li a:hover{
+    color: green;
+}
+#select{ 
+    color: green !important; 
+    background-color: rgba(0, 128, 0, 0.418) !important;
+    border-radius: 2rem 0 0 2rem !important;
+    width: 80% !important;
+    border-color: green;
+}
+
+
+.between{
+    display: flex;
+    flex-direction: column;
+}
+.between h1{
+    text-align: center;
+}
+.persianBooks{
+    display: grid;
+    grid-template-columns:40% 40%;
+    column-gap: 10%;
+    row-gap: 5%;
+}
+.persianBooks .item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.persianBooks .item img{
+    width: 15vw;
+    height: 28vh;
+}
+#select{ 
+    color: green !important; 
+    background-color: rgba(0, 128, 0, 0.418) !important;
+    border-radius: 2rem 0 0 2rem !important;
+    width: 80% !important;
+    border-color: green;
+}
+#select a{
+    color: green;
+}
+.leftAside aside{
+    position: sticky !important;
+    margin-top: 1rem;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 2px green;
+    border-left: solid 2px green;
+}
+.leftAside aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+}
+.leftAside aside ul li{
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin-top: 0rem;
+    padding-top: 0.5rem;
+    transition: 0.3s;
+}
+.leftAside aside ul li:hover{
+    background-color: rgba(0, 128, 0, 0.301);
+    width: 50% !important;
+    transform: translateY(-1rem) !important;
+    border: none;
+    border-radius: 50%;
+    color: green;
+}
+.leftAside aside h3{
+    color: green;
+    text-shadow: 10px 7px 5px rgb(91, 209, 68);
+}
+.middlePersian .between .persianBooks .item a:hover{
+    color: green !important;
+    background-color: white !important;
+    border: solid 2px green !important;
+    font-weight: 900 !important;
+}
+.middlePersian .between .persianBooks .item a:active{
+    transform: scale(0.6);
+}
+@media(max-width:450px){
+    .body{
+        top: -25vh;
+    }
+    .middlePersian{
+    grid-template-columns: 25% 50% 25%;
+    }
+    .introduction h1{
+        font-size: larger;
+    }
+    .introduction p{
+        font-size: medium;
+    }
+    .middlePersian aside ul li{
+        font-size: medium;
+    }
+    .between h1{
+        font-size: larger;
+    }
+.persianBooks{
+    display: grid;
+    grid-template-columns:85%;
+    row-gap: 1.5rem;
+    margin-right: 1rem;
+}
+.persianBooks .item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+.persianBooks .item img{
+    width: 15vw;
+    height: 28vh;
+}
+.body .middlePersian .leftAside aside h3{
+    font-size: small;
+}
+.persianBooks .item a{
+    font-size: medium;
+}
+.body .middlePersian .between .persianBooks .item img{
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+}
+@media(min-width:450px) and (max-width:720px){
+
+    .introduction h1{
+        font-size:x-large;
+    }
+    .introduction p{
+        font-size: large;
+    }
+    .middlePersian{
+        grid-template-columns: 27% 53% 20%;
+    }
+        .middlePersian aside ul li{
+        font-size: medium;
+    }
+        .between h1{
+        font-size: xx-large;
+    }
+    .persianBooks{
+    display: grid;
+    grid-template-columns:45% 45%;
+    column-gap: 3%;
+    row-gap: 5%;
+}
+.persianBooks .item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.persianBooks .item a{
+    font-size: medium;
+}
+.persianBooks .item h4{
+    font-size: 15px;
+}
+.persianBooks .item img{
+    width: 15vw;
+    height: 20vh;
+}
+.middlePersian aside ul li{
+    width: 57%;
+}
+
+}

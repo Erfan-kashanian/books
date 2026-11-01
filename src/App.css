@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "farsi";
+  src: url(./font/BBadr.ttf);
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg ,rgb(44, 172, 5),rgb(105, 179, 102),rgb(222, 243, 219));
+  border-radius: 0px 0px 50% 50%;
+  font-family: "farsi";
+}
+nav h1{
+  margin: 0%;
+}
+nav .sign{
+  align-self: end;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  transition: 0.2s;
+}
+nav .sign:hover{
+  transform: scale(1.1);
+}
+nav .sign a{
+  color: aliceblue;
+  text-decoration: none;
+  border: 2px white solid;
+  border-radius: 0px 0px 50% 50%;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+nav .pages{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  border-bottom: none;
+  border-radius: 50% 50% 0px 0px ;
+  background-color: aliceblue;
+}
+nav .pages a{
+  padding: 1rem;
+  text-decoration: none;
+  color: green;
+  font-size: large;
+  transition: 1ms;
+}
+nav .pages a:hover{
+  border-bottom: 2px solid green;
+  transform-origin: center;
+}
+.categoryList{
+  background-color: rgba(255, 255, 255, 0.945);
+  border-radius: 7px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4,12vw);
+  text-align: center;
+  width: 50%;
+  right: 25%;
+  transition: 0.3s;
+  transform: scale(1,1);
+  transform-origin: top;
+}
+.categoryclose{
+  border-radius: 7px;
+  background-color: rgba(240, 248, 255, 0.959);
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4,12vw);
+  text-align: center;
+  width: 50%;
+  right: 25%;
+  transition: 0.3s;
+  transform: scale(1,0);
+  transform-origin: top;
+}
+.literature,.novel,.economy,.history{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.history a{
+    text-decoration: none;
+    color: green;
+}
+.history a:hover{
+    background-color: rgba(181, 245, 181, 0.493);
+    border: 1px solid green;
+    border-radius: 7px;
+}
+.economy a{
+    text-decoration: none;
+    color: green;
+}
+.economy a:hover{
+    background-color: rgba(181, 245, 181, 0.486);
+    border: 1px solid green;
+    border-radius: 7px;
+}
+.novel a{
+    text-decoration: none;
+    color: green;
+}
+.novel a:hover{
+    background-color: rgba(181, 245, 181, 0.5);
+    border: 1px solid green;
+    border-radius: 7px;
+}
+.literature a{
+    text-decoration: none;
+    color: green;
+}
+.literature a:hover{
+    background-color: rgba(181, 245, 181, 0.486);
+    border: 1px solid green;
+    border-radius: 7px;
+}
+.history .title {
+    color: black;
+}
+.economy .title{
+    color: black;
+}
+.literature .title{
+    color: black;
+}
+.novel .title{
+    color: black;
+}
+footer{
+  position: relative;
+  margin-bottom: -1rem;
+  background:linear-gradient(45deg ,rgb(44, 172, 5),rgb(105, 179, 102),rgb(222, 243, 219));
+  border-radius: 50% 50% 0 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+footer .links{
+  display: flex;
+  position: relative;
+  right: 10%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.links a{
+  position: relative;
+  z-index: 4;
+  text-decoration: none;
+  color: rgb(2, 78, 2);
+  transition: 0.2s;
+  padding: 0.5rem;
+}
+.links a:hover{
+  transform: rotate(30deg);
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.contact{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto auto auto;  
+}
+.contact .contactText{
+  grid-column: 1/8;
+  margin-right: 10rem;
+}
+.contact .contactLinks{
+  position: relative;
+  right: 10vw;
+}
+.contact img{
+  width: 3rem;
+  height: 3rem;
+  color: blue;
+}
+.contact a{
+  padding-right: 2rem;
+}
+.contact a img{
+  transition: 0.2s;
+}
+.contact a img:hover{
+  transform: translateY(-1rem);
+}
+@media(max-width:450px){
+  #subcategory{
+    display: none;
+  }
+  .categoryList{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 5vh;
+  }
+  .categoryclose{
+   display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 5vh;
+  }
+  .literature,.novel,.economy,.history{
+    font-size: medium;
+  }
+  nav .sign a{
+    font-size: small;
+    padding: 0.5rem;
+    padding-top: 1rem;
+  }
+  footer .links{
+    display: none;
+  }
+  footer .contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .contact .contactLinks a{
+    padding-right: 1rem;
+  }
+  .contact img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .contact .contactText{
+    text-align: center;
+    margin-right: 3rem;
+  }
+}
+@media(min-width:450px ) and ( max-width:720px){
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .links{
+  position: relative;
+  right: 0;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+}
+.contact .contactLinks{
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  margin-top: 1rem;
+}
+.contact .contactText{
+  margin-right: 0;
+}
+.contact img{
+  width: 2rem;
+  height: 2rem; 
+}
+.contact a{
+  padding-right: 1rem;
+}
+
+}

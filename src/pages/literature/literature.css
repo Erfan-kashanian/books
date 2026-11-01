@@ -1,0 +1,366 @@
+.body{
+    position: relative;
+    top:-28vh;
+}
+
+.introduction {
+    background-color: rgb(177, 214, 177);    
+    border-radius: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introductionLess{
+    background-color: rgb(177, 214, 177);    
+    border-radius: 10rem 10rem 0 0;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introductionLess h3{
+    padding: 1rem;
+}
+.introduction h3{
+    padding:0rem 1rem;
+}
+.more{
+    background-color: rgb(177, 214, 177);    
+    border-radius: 0 0 10rem 10rem;
+    text-align: center;
+    margin-top: -1.4rem;
+    padding:0rem 2rem;
+}
+.inner{
+    width: 98%;
+    position: relative;
+}
+.inneroff{
+    display: none   ;
+}
+.hidden{
+    display: none;
+}
+.shown{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.966),rgba(0, 0, 0, 0.795),rgba(49, 49, 49, 0.616),rgba(121, 120, 120, 0.116));
+    border-radius: 0 0 15rem 15rem;
+}
+
+.less{
+    display: none;
+}
+.hideButton{
+    display: none;
+}
+.showButton{
+    border: none;
+    background-color: rgba(0, 128, 0, 0.897);
+    color: aliceblue;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+    position: relative;
+    z-index: 3;
+}
+.showButton:hover{
+    color: rgb(253, 253, 253);
+    background-color: rgb(27, 27, 27);
+}
+.middle{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position: relative;
+    top: 5vh;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.part{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.part h1{
+    align-self: flex-start;
+    color: green;
+    text-shadow: 5px 5px 6px green;
+}
+.books{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 70vh;
+    width: 90%;
+    position: relative;
+    gap: 1rem;
+     background-color: rgba(58, 170, 73, 0.267);
+ border-radius: 10px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 5px 5px green;
+    transition: 0.2s;
+    position: relative;
+    height: 50vh;
+    margin-right: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.item img{
+    width: 13vw;
+    height: 22vh;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.item h4{
+    font-size: large;
+    padding: 0.1rem;
+    margin: 0;
+}
+.item  a {
+    color: white !important;
+    background-color: green;
+    font-size: large;
+    font-weight: 500;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: 0.2s;
+    text-decoration: none;
+}
+ .body .middle .left .part .books .item a:hover{
+    color: green !important;
+    background-color: white !important;
+    border: solid 2px green !important;
+    font-weight: 900 !important;
+
+}
+.body .middle .left .part .books .item a:active{
+    transform: scale(0.6);
+}
+
+.title{
+    color: green;
+}
+.line{
+    margin-right: 5%;
+    border-bottom: 1px green solid;
+    width: 90%;
+}
+.books a{
+    position: relative;
+   
+    color: green;
+    transition: 0.1s;
+}
+.books a :active{
+    color: rgb(161, 233, 158) ;
+}
+.middle aside ul{
+    position: sticky;
+    top: 10%;
+}
+.middle aside ul li{
+padding: 0.5rem;
+margin-top: 0.5rem;
+list-style: none;
+font-size: x-large;
+border-bottom: 2px solid black;
+width: 50%;
+transition: 0.1s;
+}
+.middle aside ul li:hover{
+    color: green;
+    width: 60%;
+    border-bottom: 2px solid green;
+    transform: scale(1.1);
+}
+
+.middle aside ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.middle aside ul li a:hover{
+    color: green;
+}
+#select{ 
+    color: green !important; 
+    background-color: rgba(0, 128, 0, 0.418) !important;
+    border-radius: 2rem 0 0 2rem !important;
+    width: 80% !important;
+    border-color: green;
+}
+#select a{
+    color: green;
+}
+@media(max-width:450px){
+    .body{
+        top: -20vh;
+    }
+    .introduction h1{
+        font-size: x-large;
+    }
+    .introductionLess h1{
+        font-size: x-large;
+    }
+    .introduction h3{
+        font-size: medium;
+    }
+    .introductionLess h3{
+        font-size: medium;
+    }
+    .inner{
+    width: 87%;
+    position: relative;
+    }
+    .inneroff{
+        width: 87%;
+    position: relative;
+    }
+    .inner h1{
+        font-size: x-large;
+    }
+    .inneroff h3{
+        font-size: medium;
+    }
+    .more h1{
+        font-size: x-large;
+    }
+    .more h3{
+        font-size: medium;
+    }
+    .less h1{
+        font-size: x-large;
+    }
+    .less h3{
+        font-size: medium;
+    }
+    .middle{
+    display: grid;
+    grid-template-columns: 30% 70% !important;
+    
+}
+      .middle aside ul li {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        list-style: none;
+        font-size: medium;
+        border-bottom: 2px solid black;
+        width: 50%;
+        transition: 0.1s;
+    }
+    .left .part h1{
+        font-size: x-large;
+        align-self: center;
+    }
+    .item h4{
+        font-size: small;
+    }
+    .part .books .item a{
+        font-size: small;
+    }
+    .item {
+        padding: 0.5rem;
+    }
+    .part .books .item img{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 25vw;
+        height: 22vh;
+    }
+}
+@media(min-width:450px) and (max-width:720px){
+    .body{
+        top: -40vh;
+    }
+     .introduction h1{
+        font-size: xx-large;
+    }
+    .introductionLess h1{
+        font-size: xx-large;
+    }
+    .introduction h3{
+        font-size: large;
+    }
+    .introductionLess h3{
+        font-size: large;
+    }
+    .inner{
+    width: 95%;
+    position: relative;
+    }
+    .inneroff{
+        width: 95%;
+    position: relative;
+    }
+    .inner h1{
+        font-size: xx-large;
+    }
+    .inneroff h3{
+        font-size: large;
+    }
+    .more h1{
+        font-size: xx-large;
+    }
+    .more h3{
+        font-size: large;
+    }
+    .less h1{
+        font-size: xx-large;
+    }
+    .less h3{
+        font-size: large;
+    }
+    .middle{
+    display: grid;
+    grid-template-columns: 25% 75% !important;
+    
+}
+      .middle aside ul li {
+        padding: 0.7rem;
+        margin-top: 0.7rem;
+        list-style: none;
+        font-size: large;
+        border-bottom: 2px solid black;
+        width: 50%;
+        transition: 0.1s;
+    }
+    .left .part h1{
+        font-size: xx-large;
+        align-self: center;
+    }
+    .item h4{
+        font-size: medium;
+    }
+    .part .books .item a{
+        font-size: medium;
+    }
+    .item {
+        padding: 0.7rem;
+    }
+    .part .books .item img{
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+}

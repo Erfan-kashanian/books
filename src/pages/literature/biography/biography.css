@@ -1,0 +1,41 @@
+
+.leftAside aside{
+    position: sticky !important;
+    margin-top: 1rem;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 2px green;
+    border-left: solid 2px green;
+}
+.leftAside aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+}
+.leftAside aside ul li{
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin-top: 0rem;
+    padding-top: 0.5rem;
+    transition: 0.2s;
+}
+.leftAside aside ul li:hover{
+    background-color: rgba(0, 128, 0, 0.301);
+    width: 50% !important;
+    transform: translateY(-1rem) !important;
+    border: none;
+    border-radius: 50%;
+    color: green;
+}
+.leftAside aside h3{
+    color: green;
+    text-shadow: 10px 7px 5px rgb(91, 209, 68);
+}

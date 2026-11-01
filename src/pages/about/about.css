@@ -1,0 +1,33 @@
+.about{
+    position: relative;
+    top: -30vh;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    direction: rtl;
+}
+.about p{
+    font-size: large;
+}
+@media(max-width:450px){
+    .about{
+        top: -20vh;
+    }
+    .about h1{
+        font-size: larger;
+    }
+    .about p{
+        font-size: small;
+    }
+}
+@media(min-width:450px) and (max-width:720px){
+    .about{
+        margin-bottom: -7rem;
+        top: -40vh;
+    }
+    .about h1{
+        font-size: x-large;
+    }
+    .about p{
+        font-size: medium;
+    }
+}
