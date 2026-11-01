@@ -35,7 +35,7 @@ export default function App(){
   const[catshow,setCatshow]=useState(null)
   return(
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/books">
         <nav>
           <div className='sign'><NavLink to='./sign/login'>ثبت نام / ورود</NavLink></div>
           <h1>کتابخانه</h1>
