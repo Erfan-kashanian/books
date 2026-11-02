@@ -134,7 +134,7 @@ transition: 0.1s;
 }
 @media(max-width:450px){
     .body{
-        top: -25vh;
+        top: -15vh;
     }
     .middlePersian{
     grid-template-columns: 25% 50% 25%;
@@ -155,16 +155,16 @@ transition: 0.1s;
     display: grid;
     grid-template-columns:85%;
     row-gap: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 .persianBooks .item {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
 .persianBooks .item img{
-    width: 15vw;
+    width: 28vw;
     height: 28vh;
 }
 .body .middlePersian .leftAside aside h3{

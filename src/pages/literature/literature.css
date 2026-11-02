@@ -214,9 +214,9 @@ transition: 0.1s;
 #select a{
     color: green;
 }
-@media(max-width:450px){
+@media (max-width:450px){
     .body{
-        top: -20vh;
+        top: -15vh;
     }
     .introduction h1{
         font-size: x-large;
