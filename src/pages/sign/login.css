@@ -44,9 +44,10 @@ form button:hover{
 }
 .error{
     color: red;
+    margin-top: 0.5rem;
 }
 @media (max-width:450px){
     form{
-        bottom: 5vh;
+        bottom: -2vh;
     }
 }
