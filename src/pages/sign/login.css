@@ -48,6 +48,6 @@ form button:hover{
 }
 @media (max-width:450px){
     form{
-        bottom: -2vh;
+        bottom: 0vh;
     }
 }
