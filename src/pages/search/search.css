@@ -94,7 +94,7 @@ background-color: rgba(0, 0, 0, 0);
 }
 @media(max-width:450px){
     .searchResults{
-        top: -20vh;
+        top: -10vh;
         margin-bottom: -5rem;
     }
     .topic h1{
