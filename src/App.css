@@ -162,6 +162,7 @@ footer .links{
   border-radius: 5px;
 }
 .contact{
+  text-align: center;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto auto auto auto auto;  

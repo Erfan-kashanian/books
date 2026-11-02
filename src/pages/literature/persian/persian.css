@@ -134,7 +134,7 @@ transition: 0.1s;
 }
 @media(max-width:450px){
     .body{
-        top: -15vh;
+        top: -5vh;
     }
     .middlePersian{
     grid-template-columns: 25% 50% 25%;

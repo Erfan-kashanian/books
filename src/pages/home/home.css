@@ -79,7 +79,7 @@
 }
 @media (max-width:450px){
     .main{
-        top:-15vh;
+        top:-5vh;
     }
     .hero{
         height: 40vh;
