@@ -5,7 +5,7 @@
         justify-content: space-around;
         position: relative;
         top: -28vh;
-        margin-bottom: -7rem;
+        margin-bottom: 0rem;
         width: 80%;
         right: 10%;
         background-color: rgba(2, 133, 13, 0.356);
@@ -28,6 +28,7 @@
 
 .searchResults .books{
 background-color: rgba(0, 0, 0, 0);
+
 }
 .item{
     display: flex;
@@ -95,7 +96,7 @@ background-color: rgba(0, 0, 0, 0);
 @media(max-width:450px){
     .searchResults{
         top: -10vh;
-        margin-bottom: -5rem;
+        margin-bottom: 5rem;
     }
     .topic h1{
         font-size: medium;
@@ -117,6 +118,7 @@ background-color: rgba(0, 0, 0, 0);
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 }
 @media(min-width:450px) and (max-width:720px){
         .searchResults{
